@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bookshop.dao.BookDAO">
+    <resultMap type="Book" id="booksMap">
+        <id column="book_id" property="book_id"/>
+        <result column="name" property="name"/>
+        <result column="author" property="author"/>
+        <result column="price" property="price"/>
+        <result column="type" property="type"/>
+        <!-- <association property="" column=""></association> -->
+    </resultMap>
+
+    <select id="listAllBooks"  resultMap="booksMap">
+        select * from book
+    </select>
+
+</mapper>
