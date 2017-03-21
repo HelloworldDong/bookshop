@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5f981aa3-4144-4085-a0e7-fec8d9828dad" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -949,7 +948,7 @@
       <workItem from="1490011933461" duration="2174000" />
       <workItem from="1490019462151" duration="3909000" />
       <workItem from="1490092019772" duration="718000" />
-      <workItem from="1490093494705" duration="2240000" />
+      <workItem from="1490093494705" duration="2273000" />
     </task>
     <task id="LOCAL-00001" summary="bookshop v1">
       <created>1490092335503</created>
@@ -965,7 +964,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490093617438</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="bookshop v1">
+      <created>1490101150120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1490101150120</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -983,7 +989,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71847000" />
+    <option name="totallyTimeSpent" value="71880000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1040,6 +1046,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="bookshop v1" />
     <option name="LAST_COMMIT_MESSAGE" value="bookshop v1" />
   </component>
