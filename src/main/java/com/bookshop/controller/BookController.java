@@ -4,6 +4,7 @@ package com.bookshop.controller;
  * Created by dl on 2017/3/15.
  */
 
+
 import java.util.List;
 import java.util.Map;
 
@@ -28,7 +29,7 @@ public class BookController {
     @RequestMapping(value = "/showbooks")
     @ResponseBody
     public List<Book> showbooks(){
-        System.out.print("request begin controller/n");
+
         return bookService.listAllBooks();
 
     }
