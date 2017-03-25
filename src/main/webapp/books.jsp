@@ -99,7 +99,7 @@
 				class="fa fa-fw fa-certificate"></i> 计算机图书 <i class="fa fa-collapse"></i></a></li>
 		<li><ul class="accounts-menu nav nav-list collapse">
 			<li><a href="${ctx }/book/showbooks?type=c"><span
-					class="fa fa-caret-right"></span> c</a></li>
+					class="fa fa-caret-right"></span> C</a></li>
 			<li><a href="${ctx }/book/showbooks?type=java"><span
 					class="fa fa-caret-right"></span> Java</a></li>
 		</ul></li>
@@ -109,7 +109,7 @@
 				class="fa fa-fw fa-certificate"></i> 个人中心<i
 				class="fa fa-collapse"></i></a></li>
 		<li><ul class="person-menu nav nav-list collapse">
-			<li><a href="${ctx }/manageGoods/findAll"><span
+			<li><a href="${ctx }/manage/All"><span
 					class="fa fa-caret-right"></span> 我的购物车</a></li>
 			<li><a href="${ctx }/manageGoods/findAll"><span
 					class="fa fa-caret-right"></span> 我的订单</a></li>
@@ -130,10 +130,43 @@
 </div>
 
 <div class="content"
-	 style="height:800px; background-image : url(${ctx}/assets/background.jpg);">
+	 style="height:800px;">
 	<div class="main-content">
-		<p style="text-align: center; font-size: 60px; margin-top: 200px">欢迎访问在线书店</p>
-		</div>
+		<p style="text-align: center; font-size: 25px">
+			<B>图书列表</B>
+		</p>
+
+		<table class="table">
+			<thead>
+			<tr>
+				<th>BookID</th>
+				<th>Name</th>
+				<th>Author</th>
+				<th>Price</th>
+				<th>Type</th>
+
+			</tr>
+			</thead>
+			<tbody>
+			<c:forEach var="i" items="${books}">
+				<tr>
+					<td>${i.book_id }</td>
+					<td>${i.name }</td>
+
+					<td>${i.author }</td>
+					<td>${i.price }</td>
+					<td>${i.type }</td>
+
+					<th style="width: 3.5em;"></th>
+					<td><a href="${ctx }/cart/add?book_id=${i.book_id }"><i class="fa fa-plus">加入购物车</i></a>
+
+					</td>
+
+				</tr>
+			</c:forEach>
+			</tbody>
+		</table>
+	</div>
 </div>
 
 

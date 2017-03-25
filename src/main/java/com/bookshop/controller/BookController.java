@@ -27,10 +27,10 @@ public class BookController {
     private BookService bookService;
 
     @RequestMapping(value = "/showbooks")
-    @ResponseBody
-    public List<Book> showbooks(){
-
-        return bookService.listAllBooks();
+    public String showbooks(@RequestParam(value="type")String type,Map<String,Object> map){
+        List<Book> books=bookService.showBooks(type);
+        map.put("books",books);
+        return "books";
 
     }
 }

@@ -15,5 +15,6 @@ public interface BookService {
 
 	public void addBook(Book book);*/
 
-	public List<Book> listAllBooks();
+	public List<Book> showBooks(String type);
+	public Book find(int book_id);
 }

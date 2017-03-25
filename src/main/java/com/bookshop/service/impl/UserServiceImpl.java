@@ -21,8 +21,8 @@ public class UserServiceImpl implements UserService{
     private UserDao userDao;
 
     @Transactional(propagation = Propagation.NOT_SUPPORTED,readOnly = true)
-    public User findByName(String userName) {
-        return userDao.findByName(userName);
+    public List<User> show() {
+        return userDao.show();
     }
 
     @Transactional(propagation = Propagation.NOT_SUPPORTED,readOnly = true)

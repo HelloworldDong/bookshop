@@ -27,6 +27,6 @@ public class LoginController {
 
     @RequestMapping(value = "/login")
     public String login(){
-     return "redirect:/userpage.jsp";
+     return "redirect:/books.jsp";
     }
 }

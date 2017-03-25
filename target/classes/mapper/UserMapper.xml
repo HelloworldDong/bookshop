@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.bookshop.dao.UserDao">
-    <select id="findByName" parameterType="String" resultType="User">
-        select * from user where userName = #{userName}
+    <resultMap type="User" id="usersMap">
+        <id column="userID" property="userID"/>
+        <result column="userName" property="userName"/>
+        <result column="password" property="password"/>
+        <result column="email" property="email"/>
+        <result column="realName" property="realName"/>
+        <!-- <association property="" column=""></association> -->
+    </resultMap>
+    <select id="show"  resultType="usersMap">
+        select * from user
     </select>
 
 </mapper>

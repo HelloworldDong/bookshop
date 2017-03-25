@@ -10,7 +10,7 @@ import com.bookshop.entity.User;
  */
 @Repository(value="userDao")
 public interface UserDao {
-    public  User findByName(String userName);
+    public  List<User> show();
     public Set<String> getRoles(String userName);
     public  Set<String> getPermissions(String userName);
 }
